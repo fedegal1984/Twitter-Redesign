@@ -229,18 +229,20 @@ main{
     justify-content: start;
 }
 
-.sugerencias .contactos{
+.recomendedPeopleList{
     width: 100%;
+}
+.recomendedUserCard {
     display: flex;
     justify-content: space-between;
     align-items:center;
     margin: 1vh;
 }
-.sugerencias .contactos img{
+.recomendedUserCard img{
     width: 50px;
 }
 
-.contactos button{
+.recomendedUserCard button{
     color: black;
     border: none;
     border-radius: 50px;
@@ -248,18 +250,14 @@ main{
     height: 30px;
     font-family: 'SF display proBold';
 }
-.contactos button:hover{
+.recomendedUserCard button:hover{
     transition: background-color 0.3s ease-in-out;
     background-color: var(--letra-gris);
     color: white;
     cursor: pointer;
 }
-
-.sugerencias .parrafos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.recomendedUserCard h6{
+    color: #888888;
 }
 .sugerencias a{
     width: 100%;
