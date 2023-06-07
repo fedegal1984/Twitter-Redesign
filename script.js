@@ -32,3 +32,52 @@ recomendedUsers.forEach((user) =>{
         </div>
     `
 })
+
+const comments = [
+    {
+        nombre: "Lakshay",
+        username: "@laksh_co",
+        comentario: "How about a startup which will let you meet people with same        interests as you!?",
+        imagen: "./img/Ellipse_6.png",
+        tiempo: "10 minutes ago"
+    },
+    {
+        nombre: "Product Hunt",
+        username: "@ProductHunt",
+        comentario: "Create a video message to yourself, your family or your friend, and this platform will deliver it in the future.",
+        imagen: "./img/Ellipse_10.png",
+        tiempo: "32 minutes ago"
+    },
+    {
+        nombre: "Martita Lopez",
+        username: "@laksh_co",
+        comentario: "lorem",
+        imagen: "./img/Ellipse_6.png",
+        tiempo: "45 minutes ago"
+    },
+]
+
+const comentariosHTML = document.querySelector(".contenido")
+
+comments.forEach((com) =>{
+    comentariosHTML.innerHTML += `
+    
+    <div class="tituloPrincipal">
+        <img class="userImg" src=${com.imagen} alt="user image">
+        <p>${com.nombre}</p>
+        <p class="p2">${com.username}</p>
+        <i class="bi11 bi-three-dots"></i>
+    </div>
+    
+    <p class="p2">${com.tiempo}</p>
+    
+    <p class="p6">${com.comentario}</p>
+    <img class="grupo24" src="./img/Group 24.png" alt="">
+    <div class="botonesLakshay">
+        <button><i class="bi bi-heart"></i>Like</button>
+        <button><i class="bi bi-arrow-repeat"></i>Retweet</button>
+        <button><i class="bi bi-chat-dots"></i>Comment</button>
+        <button><i class="bi bi-upload"></i>Share</button>
+    </div>
+    `
+})

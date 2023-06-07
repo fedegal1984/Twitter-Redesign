@@ -324,41 +324,46 @@ main{
     transition: background-color 0.3s ease-in-out;
     background-color: var(--letra-gris);
 }
-.lakshay{
+
+
+.contenedorPrincipal{
     margin: 5vh 0;
     padding: 2vh;
     background-color: var(--color-principal);
     color: white;
     border-radius: 15px ;
-    
     gap: 20px;
     position: relative;
 }
-.lakshayImg{
+
+.userImg{
     width: 50px;
     position: absolute;
+    left: -70px;
 }
-.lakshay .contenido{
+
+.contenedorPrincipal .contenido{
     display: flex;
     flex-direction: column;
     padding-left: 70px;
 }
-.lakshay .tituloPrincipal{
+.contenedorPrincipal .tituloPrincipal{
     display: flex;
     gap: 30px;
     padding-top: 10px;
+    position: relative;
 }
-.lakshay .bi11{
+.contenedorPrincipal .bi11{
     position: absolute;
     right: 30px;
     color: gray;
     cursor: pointer;
 }
-.lakshay .bi11:hover{
+.contenedorPrincipal .bi11:hover{
     transition: color 0.3s ease-in-out;
     color: white;
 }
-.lakshay .p6{
+.contenedorPrincipal .p6{
     font-size: 0.9rem;
     width: 70%;
     padding: 2vh 0;
@@ -366,7 +371,7 @@ main{
 .contenido a{
     color: #1090F2;
 }
-.contenido img{
+.grupo24{
     width: 230px;
 }
 .contenido button{
@@ -383,7 +388,7 @@ main{
 }
 
 .contenido .botonesLakshay{
-    margin: 3vh 0 2vh 0;
+    margin: 3vh 2vw 2vh 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
