@@ -39,21 +39,25 @@ const comments = [
         username: "@laksh_co",
         comentario: "How about a startup which will let you meet people with same        interests as you!?",
         imagen: "./img/Ellipse_6.png",
-        tiempo: "10 minutes ago"
+        tiempo: "10 minutes ago",
+        url:""
     },
     {
         nombre: "Product Hunt",
         username: "@ProductHunt",
         comentario: "Create a video message to yourself, your family or your friend, and this platform will deliver it in the future.",
         imagen: "./img/Ellipse_10.png",
-        tiempo: "32 minutes ago"
+        tiempo: "32 minutes ago",
+        url: "https://meow.ph/seeyafutureme"
+        
     },
     {
         nombre: "Martita Lopez",
         username: "@laksh_co",
         comentario: "lorem",
         imagen: "./img/Ellipse_6.png",
-        tiempo: "45 minutes ago"
+        tiempo: "45 minutes ago",
+        url:""
     },
 ]
 
@@ -72,7 +76,10 @@ comments.forEach((com) =>{
     <p class="p2">${com.tiempo}</p>
     
     <p class="p6">${com.comentario}</p>
+    <p class="p6"><a href="${com.url}">${com.url}</a></p>
     <img class="grupo24" src="./img/Group 24.png" alt="">
+    
+
     <div class="botonesLakshay">
         <button><i class="bi bi-heart"></i>Like</button>
         <button><i class="bi bi-arrow-repeat"></i>Retweet</button>
