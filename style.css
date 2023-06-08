@@ -372,9 +372,12 @@ main{
 .contenido a{
     color: #1090F2;
 }
-.grupo24{
-    width: 230px;
+.lrc {
+    color: #888888;
+    font-size: 0.6rem;
 }
+
+
 .contenido button{
     display: flex;
     align-items: center;

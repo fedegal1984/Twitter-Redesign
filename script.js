@@ -40,7 +40,10 @@ const comments = [
         comentario: "How about a startup which will let you meet people with same        interests as you!?",
         imagen: "./img/Ellipse_6.png",
         tiempo: "10 minutes ago",
-        url:""
+        likes: 59,
+        retweets: 22,
+        comments: 39,
+        otros:""
     },
     {
         nombre: "Product Hunt",
@@ -48,38 +51,48 @@ const comments = [
         comentario: "Create a video message to yourself, your family or your friend, and this platform will deliver it in the future.",
         imagen: "./img/Ellipse_10.png",
         tiempo: "32 minutes ago",
-        url: "https://meow.ph/seeyafutureme"
+        likes: 37,
+        retweets: 14,
+        comments: 3,
+        otros: "https://meow.ph/seeyafutureme"
         
     },
     {
         nombre: "Martita Lopez",
         username: "@laksh_co",
-        comentario: "lorem",
+        comentario: "lorem ipsum dolor",
         imagen: "./img/Ellipse_6.png",
         tiempo: "45 minutes ago",
-        url:""
+        likes: 93,
+        retweets: 125,
+        comments: 16,
+        otros:"",
     },
 ]
 
 const comentariosHTML = document.querySelector(".contenido")
 
 comments.forEach((com) =>{
+    /* comentariosHTML.innerHTML = " " */
     comentariosHTML.innerHTML += `
-    
     <div class="tituloPrincipal">
         <img class="userImg" src=${com.imagen} alt="user image">
         <p>${com.nombre}</p>
         <p class="p2">${com.username}</p>
         <i class="bi11 bi-three-dots"></i>
     </div>
-    
     <p class="p2">${com.tiempo}</p>
-    
     <p class="p6">${com.comentario}</p>
-    <p class="p6"><a href="${com.url}">${com.url}</a></p>
-    <img class="grupo24" src="./img/Group 24.png" alt="">
+    <p class="p6"><a href="${com.otros}">${com.otros}</a></p>
     
-
+    <div class="lrc">
+        <i class="bi bi-heart"></i>
+        <i class="bi bi-arrow-repeat"></i>
+        <i class="bi bi-chat-dots"></i>
+        <p2>${com.likes} Likes | </p2>
+        <p2>${com.retweets} Retweet | </p2>
+        <p2>${com.comments} Comments</p2>
+    </div>
     <div class="botonesLakshay">
         <button><i class="bi bi-heart"></i>Like</button>
         <button><i class="bi bi-arrow-repeat"></i>Retweet</button>
