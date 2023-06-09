@@ -73,18 +73,17 @@ const comments = [
 const comentariosHTML = document.querySelector(".contenido")
 
 comments.forEach((com) =>{
-    /* comentariosHTML.innerHTML = " " */
+    
     comentariosHTML.innerHTML += `
-    <div class="tituloPrincipal">
+    <div class="usuario">
         <img class="userImg" src=${com.imagen} alt="user image">
         <p>${com.nombre}</p>
         <p class="p2">${com.username}</p>
         <i class="bi11 bi-three-dots"></i>
     </div>
-    <p class="p2">${com.tiempo}</p>
-    <p class="p6">${com.comentario}</p>
-    <p class="p6"><a href="${com.otros}">${com.otros}</a></p>
-    
+        <p class="p2">${com.tiempo}</p>
+        <p class="p6">${com.comentario}</p>
+        <p class="p6"><a href="${com.otros}">${com.otros}</a></p>
     <div class="lrc">
         <i class="bi bi-heart"></i>
         <i class="bi bi-arrow-repeat"></i>

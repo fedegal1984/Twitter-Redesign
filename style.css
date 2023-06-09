@@ -348,7 +348,7 @@ main{
     flex-direction: column;
     padding-left: 70px;
 }
-.contenedorPrincipal .tituloPrincipal{
+.contenedorPrincipal .usuario{
     display: flex;
     gap: 30px;
     padding-top: 10px;
